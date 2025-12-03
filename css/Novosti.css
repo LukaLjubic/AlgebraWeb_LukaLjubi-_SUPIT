@@ -1,0 +1,188 @@
+#main{
+    margin-bottom: -100px;
+}
+#main h1{
+    font-family:"Stolzl Bold", Arial, Sans-serif;
+    color:rgb(27, 27, 27);
+    border-bottom: 2px solid rgb(255, 205, 39);
+    text-align: center;
+    padding-bottom: 15px;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.backgroundNews{
+    width: 100%;
+    height: 85vh;
+    padding-bottom: 20px; 
+}
+.backgroundNews img{
+    margin-top: 20px;
+    width: 100%;
+    height: 85vh;
+    object-fit: cover;
+}
+h3{
+    font-family: "Stolzl Bold", Sans-serif, Sans-serif;
+    color:rgb(137, 39, 78);
+    text-shadow: 1px 1px rgb(212, 212, 212);
+    text-align: center;
+    margin-top: 70px;
+    margin-bottom: 20px;
+    font-size: 25px;
+}
+h3 i {
+    color:rgb(137, 39, 78);
+    margin-bottom: 50px;
+}
+a{
+    font-family: "Stolzl Bold", sans-serif, Sans-serif;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;   
+}
+i{
+    color: orange;
+    padding-right: 2px; 
+}
+#title{
+    width: 100%;
+    height: 100px;
+    padding-top: 80px;
+    background-color: white;
+}
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    background-color: rgb(245, 241, 241);
+    padding-top: 50px;
+    padding-bottom: 50px;
+    flex-wrap: wrap;
+} 
+.card{
+    border: 10px solid rgb(245, 241, 241);
+    text-align: center;
+    border-radius: 100%;
+    background-color: rgb(212, 212, 212);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: transform .2s;
+    width: 300px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 160px;
+    cursor: pointer;
+}
+.card:hover{
+    transform: scale(1.1);
+    z-index: 0;
+}
+.card:nth-child(1){
+    background-image: url("..\\img\\novost11.jpg");
+    background-size:cover;
+    background-position: center center;
+}
+.card:nth-child(2){
+    background-image: url("..\\img\\novost2.jpg");
+    background-size:cover;
+    background-position: center center;
+}
+.card:nth-child(3){
+    background-image: url("..\\img\\novost3.jpg");
+    background-size:cover;
+    background-position: center center;
+}
+
+.card p{
+    margin:0;
+    color: white;
+    font-weight: bold;
+    width: 250px;
+    text-shadow: 1px 1px #000000;
+}
+#footer{
+    background-color: #000000;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute; 
+}
+#footer h1:first-child{
+    margin: 0;
+    text-transform: uppercase;
+    color:white;
+}
+#footer h1{
+    margin: 0;
+    text-transform: uppercase;
+    color:rgb(137, 39, 78);
+    text-shadow: 1px 1px rgb(212, 212, 212);
+}
+
+/*  RESPONSIVE */
+
+@media (max-width: 900px) {
+    .backgroundNews,
+    .backgroundNews img {
+        height: 55vh;
+    }
+
+    #main h1 {
+        margin-left: 10%;
+        margin-right: 10%;
+        font-size: 1.4rem;
+    }
+
+    .cards {
+        gap: 50px;
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .card {
+        width: 240px;
+        height: 240px;
+        margin-bottom: 80px;
+    }
+
+    .card p {
+        width: 200px;
+        font-size: 0.9rem;
+    }
+
+    #footer {
+        position: static;   
+        margin-top: 20px;
+    }
+}
+
+@media (max-width: 600px) {
+    .backgroundNews,
+    .backgroundNews img {
+        height: 40vh;
+        margin-top: 60px;  
+    }
+
+    .cards {
+        gap: 30px;
+    }
+
+    .card {
+        width: 210px;
+        height: 210px;
+        margin-bottom: 60px;
+    }
+
+    .card p {
+        width: 180px;
+        font-size: 0.85rem;
+    }
+}

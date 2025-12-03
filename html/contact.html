@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link href="..\css\Contact.css" rel="stylesheet" />
+    <link href="..\css\Nav-Bar.css" rel="stylesheet" />
+    <link href="..\css\auth.css" rel="stylesheet" />
+    <link href="..\img\Algebra-logo.png" rel="icon" type="image/x-icon" />
+  </head>
+
+  <body>
+    <input class="checkbox" type="checkbox" />
+    <div class="hamburger-lines">
+      <span class="line line1"></span>
+      <span class="line line2"></span>
+      <span class="line line3"></span>
+    </div>
+
+    <div id="head">
+      <ol id="nav-bar">
+        <li><img src="..\img\Algebra-logo.png" alt="Algebra-logo.png" /></li>
+        <li><a href="index.html"><i class="nav-link"></i>Početna</a></li>
+        <li><a href="about.html"><i class="nav-link"></i>O nama</a></li>
+        <li><a href="news.html"><i class="nav-link"></i>Novosti</a></li>
+        <li id="nastavni_plan">
+          <a href="plan.html"><i class="nav-link"></i>Nastavni plan</a>
+        </li>
+        <li><a href="contact.html"><i class="nav-link"></i>Kontakt</a></li>
+        <li>
+          <a href="login.html" class="nav-login-link"
+            ><i class="nav-link"></i>Prijava</a
+          >
+        </li>
+        <li class="nav-auth-item">
+          <a href="#" class="nav-logout-link">
+            <i class="nav-link"></i>Odjava
+            <span class="nav-logout-username"></span>
+          </a>
+        </li>
+      </ol>
+    </div>
+
+    <div id="main" class="overlay">
+      <div id="img">
+        <img src="..\img\novost2.jpg" alt="novost2.jpg" />
+      </div>
+
+      <div class="contactForm">
+        <form action="https://www.fulek.com/mvc/supit/project-contact-form">
+          <h2><i class="contactForm_header"></i>Kontaktirajte nas</h2>
+
+          <label for="fname">Puno ime:</label>
+          <input type="text" id="fname" name="fullname" class="text" />
+
+          <label for="email">Email:</label>
+          <input type="mail" id="email" name="email" class="text" />
+
+          <label for="poruka">Vaša poruka:</label>
+          <textarea
+            id="poruka"
+            name="message"
+            rows="4"
+            cols="50"
+            required="required"
+          ></textarea>
+
+          <label for="vaznost">Važnost poruke:</label>
+          <select id="vaznost" name="importance" class="text">
+            <option value="visoka">Visoka</option>
+            <option value="srednja">Srednja</option>
+            <option value="niska">Niska</option>
+          </select>
+
+          <div id="newsl">
+            <label for="newsletter">Želim primati newsletter:</label>
+            <input
+              type="checkbox"
+              id="newsletter"
+              name="newsletter"
+              value="da"
+            />
+          </div>
+
+          <div id="buttons">
+            <input type="submit" value="Send" />
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <div id="footer">
+      <h1>BUDI IZVRSTAN U ONOME ŠTO VOLIŠ.</h1>
+      <h1>ZAISKRI!</h1>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="..\js\restricted_pages.js"></script>
+    <script src="..\js\login.js"></script>
+  </body>
+</html>

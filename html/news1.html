@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>News1</title>
+    <link rel="stylesheet" href="..\css\NovostStyle.css">
+    <link href="..\css\Nav-Bar.css" rel="stylesheet">
+    <link href="..\css\auth.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="..\img\Algebra-logo.png">
+</head>
+<body>
+
+    <input class="checkbox" type="checkbox" name="" id="" />
+    <div class="hamburger-lines">
+        <span class="line line1"></span>
+        <span class="line line2"></span>
+        <span class="line line3"></span>
+      </div>  
+      <div id="head">
+        <ol id="nav-bar">
+          <li><img src="..\img\Algebra-logo.png" alt="Algebra-logo.png"></li>
+          <li><a href="index.html"><i class="nav-link"></i>Početna</a></li>
+          <li><a href="about.html"><i class="nav-link"></i>O nama</a></li>
+          <li><a href="news.html"><i class="nav-link"></i>Novosti</a></li>
+          <li id="nastavni_plan"><a href="plan.html"><i class="nav-link"></i>Nastavni plan</a></li>
+          <li><a href="contact.html"><i class="nav-link"></i>Kontakt</a></li>
+          <li>
+            <a href="login.html" class="nav-login-link"><i class="nav-link"></i>Prijava</a>
+          </li>
+          <li class="nav-auth-item">
+            <a href="#" class="nav-logout-link">
+              <i class="nav-link"></i>Odjava
+              <span class="nav-logout-username"></span>
+            </a>
+          </li>
+        </ol>
+      </div>      
+    <div id="main">
+        <div id="img">
+            <img src="..\img\novost1.jpg" alt="novost1.jpg">
+        </div>
+       
+        <div id="imgs">
+          <div class="img">
+              <img src="..\img\galerija1.jpg" alt="galerija1.jpg"
+                   onclick="openModal();currentSlide(1)">
+          </div>
+          <div class="img">
+              <img src="..\img\galerija2.jpg" alt="galerija2.jpg"
+                   onclick="openModal();currentSlide(2)">
+          </div>
+      </div>
+
+      <div id="imgModal" class="img-modal">
+          <span class="img-modal-close" onclick="closeModal()">&times;</span>
+
+          <div class="img-modal-content">
+
+              <div class="img-slide">
+                  <img src="..\img\galerija1.jpg" alt="galerija1">
+              </div>
+
+              <div class="img-slide">
+                  <img src="..\img\galerija2.jpg" alt="galerija2">
+              </div>
+
+              <a class="img-prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="img-next" onclick="plusSlides(1)">&#10095;</a>
+          </div>
+      </div>
+
+        <h1>WorldSkills natjecanje - Kazan 2019.</h1>
+        <div id="news_text">
+            <p>Nakon godinu dana priprema za natjecanje WorldSkills
+                Kazan 2019 na kojem je sudjelovalo 1300 natjecatelja iz
+                cijelog svijeta, trud se itekako isplatio. Josip,
+                student 3. godine preddiplomskog studija sistemskog
+                inženjerstva osvojio je 12. mjesto u vještini IT
+                Networks and System Administration te osvojio medalju
+                izvrsnosti! Čestitke Josipu ali i njegovim/našim
+                mentorima koji su ga pripremali za ovo natjecanje –
+                voditelju studija sistemskog inženjerstva Silviju
+                Papiću, voditelju katedre za operacijske sustave –
+                Vedranu Dakiću i asistentu na studiju sistemskog
+                inženjerstva – Jasminu Redžepagiću. Čestitke i našem
+                studentu 3.godine preddiplomskog studija programskog
+                inženjerstva Josipu Horvatu i mentoru voditelju katedre
+                za programsko inženjerstvo - Goranu Đambiću na osvojenom
+                16.mjestu u vještini IT Software Solutions for Business.</p>
+            
+        </div>
+        <div id="news_media">
+            <video controls>
+                <source src="../vid/worldskills.mp4" type="video/mp4">
+                Your browser does not support this video format.
+            </video>    
+                
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="..\js\restricted_pages.js"></script>
+    <script src="..\js\login.js"></script>
+
+    <script>
+      let slideIndex = 1;
+
+      function openModal() {
+        document.getElementById("imgModal").style.display = "block";
+        showSlides(slideIndex);
+      }
+
+      function closeModal() {
+        document.getElementById("imgModal").style.display = "none";
+      }
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        const slides = document.getElementsByClassName("img-slide");
+        if (!slides.length) return;
+
+        if (n > slides.length) { slideIndex = 1; }
+        if (n < 1) { slideIndex = slides.length; }
+
+        for (let i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        slides[slideIndex - 1].style.display = "block";
+      }
+    </script>
+
+</body>
+
+</html>
+
+            
+            

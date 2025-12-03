@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>News</title>
+    <link rel="stylesheet" href="..\css\Novosti.css">
+    <link rel="stylesheet" href="..\css\Nav-Bar.css">
+    <link rel="stylesheet" href="..\css\auth.css">
+    <link rel="icon" type="image/x-icon" href="..\img\Algebra-logo.png">
+  </head>
+    
+  <body>
+    <input class="checkbox" type="checkbox" name="" id="" />
+    <div class="hamburger-lines">
+      <span class="line line1"></span>
+      <span class="line line2"></span>
+      <span class="line line3"></span>
+    </div>
+
+    <div id="head">
+      <ol id="nav-bar">
+        <li><img src="..\img\Algebra-logo.png" alt="Algebra-logo.png"></li>
+        <li><a href="index.html"><i class="nav-link"></i>Početna</a></li>
+        <li><a href="about.html"><i class="nav-link"></i>O nama</a></li>
+        <li><a href="news.html"><i class="nav-link"></i>Novosti</a></li>
+        <li id="nastavni_plan"><a href="plan.html"><i class="nav-link"></i>Nastavni plan</a></li>
+        <li><a href="contact.html"><i class="nav-link"></i>Kontakt</a></li>
+        <li>
+          <a href="login.html" class="nav-login-link"><i class="nav-link"></i>Prijava</a>
+        </li>
+        <li class="nav-auth-item">
+          <a href="#" class="nav-logout-link">
+            <i class="nav-link"></i>Odjava
+            <span class="nav-logout-username"></span>
+          </a>
+        </li>
+      </ol>
+    </div>      
+
+    <div id="main">
+      <div class="backgroundNews">
+        <img src="..\img\novost1.jpg" alt="novost1.jpg">
+      </div>
+
+      <h1>Novosti</h1>
+
+      <div class="cards">
+        <div class="card" onclick="window.location='..\\html\\news1.html'">
+          <h3 id="news1_heading"><i class="news_title"></i>28.8.2019</h3>
+          <p>Student Josip Stanešić 12. je sistemaš svijeta i dobitnik medalje izvrsnosti na natjecanju WorldSkills Kazan 2019.</p>
+        </div>
+        <div class="card" onclick="window.location='..\\html\\news2.html'">
+          <h3 id="news2_heading"><i class="news_title"></i>22.07.2019</h3>
+          <p>Nagrađujemo izvrsnost: Objavljujemo dobitnike stipendijskog natječaja šk.god 2018./2019.!</p>
+        </div>
+        <div class="card" onclick="window.location='..\\html\\news3.html'">
+          <h3 id="news3_heading"><i class="news_title"></i>8.4.2019</h3>
+          <p>Digitalno Junior ljeto</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="footer">
+      <h1>BUDI IZVRSTAN U ONOME ŠTO VOLIŠ.</h1>
+      <h1>ZAISKRI!</h1>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="..\js\restricted_pages.js"></script>
+    <script src="..\js\login.js"></script>
+  </body>
+</html>

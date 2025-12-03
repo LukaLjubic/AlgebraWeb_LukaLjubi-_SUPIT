@@ -1,0 +1,19 @@
+  
+  .nav-login-link {
+    cursor: pointer;
+  }
+  
+  .nav-logout-link {
+    display: none;           
+    cursor: pointer;
+  }
+  
+  .nav-logout-username {
+    margin-left: 4px;
+    font-weight: normal;
+    font-style: italic;
+    font-size: 0.9em;
+  }
+
+  
+  

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>ALGEBRA</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="..\css\Index.css" rel="stylesheet">
+    <link href="..\css\main.css" rel="stylesheet">
+    <link href="..\css\Nav-Bar.css" rel="stylesheet">
+    <link href="..\css\auth.css" rel="stylesheet">
+    <link href="..\img\Algebra-logo.png" rel="icon" type="image/x-icon">
+  </head>
+
+  <body class="home-page" style="margin: 0;">
+    <input class="checkbox" type="checkbox" name="" id="" />
+    <div class="hamburger-lines">
+      <span class="line line1"></span>
+      <span class="line line2"></span>
+      <span class="line line3"></span>
+    </div>
+
+    <div id="head">
+      <ol id="nav-bar" class="nav-bar">
+        <li class="nav-item">
+          <img src="..\img\Algebra-logo.png" alt="Algebra-logo.png">
+        </li>
+        <li class="nav-item">
+          <a class="nav-item-anchor" href="index.html" tabindex="1">
+            <i class="nav-link"></i>
+            Početna
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item-anchor" href="about.html" tabindex="2">
+            <i class="nav-link"></i>
+            O nama
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item-anchor" href="news.html" tabindex="3">
+            <i class="nav-link"></i>
+            Novosti
+          </a>
+        </li>
+        <li class="nav-item" id="nastavni_plan" tabindex="4">
+          <a class="nav-item-anchor" href="plan.html">
+            <i class="nav-link"></i>
+            Nastavni plan
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item-anchor" href="contact.html" tabindex="5">
+            <i class="nav-link"></i>
+            Kontakt
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item-anchor nav-login-link" href="login.html" tabindex="6">
+            <i class="nav-link"></i>
+            Prijava
+          </a>
+        </li>
+        <li class="nav-item nav-auth-item">
+          <a href="#" class="nav-item-anchor nav-logout-link">
+            <i class="nav-link"></i>
+            Odjava
+            <span class="nav-logout-username"></span>
+          </a>
+        </li>
+      </ol>
+    </div>
+
+    <div id="main" class="main-body">
+      <video id="videoMain" type="video/mp4" autoplay muted loop>
+        <source src="..\vid\typingOnlaptop.mp4" type="video/mp4">
+      </video>
+      <div id="text_animation" class="textAnimation">
+        <span id="sentence" class="sentence"></span>
+        <span id="zaiskri" class="sentence"></span>
+        <span class="input-cursor"></span>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <script src="..\js\restricted_pages.js"></script>
+    <script src="..\js\index.js"></script>
+    <script src="..\js\login.js"></script>
+  </body>
+</html>

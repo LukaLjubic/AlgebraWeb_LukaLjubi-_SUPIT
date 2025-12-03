@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nastavni plan</title>
+    <link href="..\img\Algebra-logo.png" rel="icon" type="image/x-icon" >
+    <link href="..\css\Plan.css" rel="stylesheet" >
+    <link href="..\css\Nav-Bar.css" rel="stylesheet" >
+    <link href="..\css\auth.css" rel="stylesheet" >
+  </head>
+  
+
+<body>
+  <input class="checkbox" type="checkbox" name="" id="" />
+  <div class="hamburger-lines">
+    <span class="line line1"></span>
+    <span class="line line2"></span>
+    <span class="line line3"></span>
+  </div>
+  <div id="head">
+    <ol id="nav-bar">
+      <li><img src="..\img\Algebra-logo.png" alt="Algebra-logo.png"></li>
+      <li><a href="index.html"><i class="nav-link"></i>Početna</a></li>
+      <li><a href="about.html"><i class="nav-link"></i>O nama</a></li>
+      <li><a href="news.html"><i class="nav-link"></i>Novosti</a></li>
+      <li id="nastavni_plan"><a href="plan.html"><i class="nav-link"></i>Nastavni plan</a></li>
+      <li><a href="contact.html"><i class="nav-link"></i>Kontakt</a></li>
+      <li>
+        <a href="login.html" class="nav-login-link"><i class="nav-link"></i>Prijava</a>
+      </li>
+      <li class="nav-auth-item">
+        <a href="#" class="nav-logout-link">
+          <i class="nav-link"></i>Odjava
+          <span class="nav-logout-username"></span>
+        </a>
+      </li>
+    </ol>
+  </div>  
+
+  <div id="main">
+    <div id="img">
+      <img src="..\img\novost3.jpg" alt="novost3.jpg">
+    </div>
+
+    <div id="title">
+      <h1>Nastavni plan</h1>
+    </div>
+
+    <div id="kolegijSearch">
+      <div id="searchBar">
+        <h2>Naziv kolegija:</h2>
+        <input id="kolegiji" name="cc-number" autofocus list="kolegiji" placeholder="Unesite naziv kolegija">
+      </div>
+    </div>
+
+    <div id="tableKolegij">
+      <table id="kolegijiTable">
+        <thead>
+          <tr>
+            <th>Kolegij</th>
+            <th>ECTS</th>
+            <th>Ukupno sati</th>
+            <th>Predavanja</th>
+            <th>Vježbe</th>
+            <th>Tip</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody id="tablebody">
+          
+        </tbody>
+        <tfoot>
+          <th id="ukupno">Ukupno</th>
+          <th id="ectsUkupno"></th>
+          <th id="satiUkupno"></th>
+          <th id="predavanjaUkupno"></th>
+          <th id="vjezbeUkupno"></th>
+          <th ></th>
+          <th ></th>
+          <th ></th>
+        </tfoot>
+      </table>
+
+    </div>
+  </div>
+
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"
+  ></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  <script
+    src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"
+    integrity="sha256-6XMVI0zB8cRzfZjqKcD01PBsAy3FlDASrlC8SxCpInY="
+    crossorigin="anonymous"
+  ></script>
+  <script src="..\js\restricted_pages.js"></script>
+  <script src="..\js\plan.js"></script>
+  <script src="..\js\login.js"></script>
+   
+</body>
+</html>

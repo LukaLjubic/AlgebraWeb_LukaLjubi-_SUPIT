@@ -1,0 +1,325 @@
+body {
+    width: 100vw;
+    margin: 0;
+}
+
+#main {
+    margin-bottom: 0;
+    background-color: #ffffff;
+}
+
+.backgroundAbout,
+.backgroundAbout img {
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+}
+
+.red_title {
+    font-family: "Stolzl Bold", Arial, sans-serif;
+    color: #c5242a; /* crvena */
+    text-align: center;
+    font-size: 28px;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.bolt_icon {
+    margin-right: 8px;
+}
+
+.nice_text_block {
+    max-width: 900px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.nice_italic {
+    font-style: italic;
+    font-family: "Georgia", "Times New Roman", serif;
+    color: #555555;
+    line-height: 1.7;
+    margin: 6px 0;
+}
+
+.values_boxes {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.values_box {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 22px 20px 26px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-top: 3px solid #f1f1f1;
+}
+
+.values_box h3 {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 0 0 14px;
+}
+
+.values_box p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555555;
+    margin: 0;
+    text-align: left;
+}
+
+.history_boxes {
+    max-width: 1200px;
+    margin: 20px auto 80px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.history_box {
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding: 20px 18px 24px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    border-top: 3px solid #e9e9e9;
+}
+
+.history_box h3 {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    color: #333333;
+    margin: 0 0 10px;
+}
+
+.history_box p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #555555;
+    margin: 0;
+    text-align: left;
+}
+
+.partner_cards {
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 10px;
+}
+
+.card {
+    border: 1px solid #dddddd;
+    padding: 10px 14px 18px;
+    text-align: justify;
+    border-radius: 5px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.06);
+    width: 400px;
+    min-width: 250px;
+}
+
+.partner_card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    width: 350px;
+    height: 150px;
+    transition: transform 0.2s;
+}
+
+.partner_card:hover {
+    transform: scale(1.05);
+}
+
+.partner_card img {
+    width: 250px;
+    height: 100px;
+    object-fit: contain;
+}
+
+
+#map {
+    background-image: url("..\\img\\kakoDoNas.jpg");
+    background-repeat: no-repeat;
+    padding: 50px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.map_main {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#logo_wrap {
+    padding: 40px 8% 60px;
+    background-color: #ffffff;
+}
+
+.logo_intro {
+    text-align: center;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.logo_grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 40px 60px;
+    align-items: flex-start;
+    justify-items: center;
+}
+
+.logo_item h4 {
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    font-weight: 600;
+    line-height: 1.4;
+    text-align: left;
+    margin: 0 0 15px;
+}
+
+.logo_item img {
+    max-width: 170px;
+    max-height: 70px;
+    width: 100%;
+    object-fit: contain;
+}
+
+
+
+#about4 {
+    padding: 40px 0 60px;
+    background-color: #ffffff;
+}
+
+#about4 .red_title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.kdn_cards {
+    max-width: 1100px;
+    margin: 0 auto 40px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+}
+
+.kdn_card {
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    padding: 28px 32px;
+    text-align: left;
+}
+
+.kdn_card h3 {
+    margin-top: 0;
+    margin-bottom: 18px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #000;
+}
+
+.kdn_card p {
+    margin: 0 0 10px;
+    text-align: justify;
+}
+
+#values-section,
+#history-section,
+#kako-do-nas {
+  scroll-margin-top: 90px;  
+}
+
+
+#map {
+    background-image: url("..\\img\\kakoDoNas.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 50px 30px 60px;
+}
+
+
+/* responsive */
+@media (max-width: 1000px) {
+    .logo_grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 600px) {
+    .logo_grid {
+        grid-template-columns: 1fr;
+    }
+
+    .logo_item h4 {
+        text-align: center;
+    }
+}
+@media only screen and (max-width: 1000px) {
+    .values_boxes,
+    .history_boxes {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .backgroundAbout {
+        display: none;
+    }
+
+    .values_boxes,
+    .history_boxes {
+        grid-template-columns: 1fr;
+    }
+
+    .card {
+        width: 300px;
+    }
+
+    .map_main {
+        display: none;
+    }
+}
+
+@media (max-width: 900px) {
+    .kdn_cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+
